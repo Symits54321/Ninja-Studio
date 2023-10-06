@@ -1,0 +1,547 @@
+:root {
+  /* --box1-color: black;
+  --box2-color: blue;
+  --box3-color: green;
+  --box4-color: red;
+  --box5-color: yellow; */
+
+  --bgcolor1: #fb813e;
+  --bgcolor1-1: #ffbb00cb;
+  --bgcolor2: rgb(125, 53, 167);
+  --bg-quelist1: grey;
+  --bg-similarlist1: black;
+  --bg-recentlist: black;
+  --bg-player1: red;
+
+  --player-color: rgb(6, 21, 88);
+}
+
+html {
+  font-family: sans-serif;
+}
+body {
+  font-family: sans-serif;
+  /* background-color: rgb(81, 18, 139); */
+  background: url(background-images/mikky.jpg);
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+button > a {
+  text-decoration: none;
+  color: black;
+}
+/*------------------------- Nav section --------------------*/
+
+.nav-section {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  border: 1px solid var(--box1-color);
+  background: linear-gradient(45deg, var(--bgcolor1), var(--bgcolor2));
+  /* display: flex; */
+}
+
+.navbar {
+  margin: auto;
+}
+
+.dropdown-menu {
+  background: linear-gradient(135deg, var(--bgcolor1), var(--bgcolor2));
+}
+.dropdown-menu > li > a:hover {
+  background: linear-gradient(90deg, var(--bgcolor1) 50%, var(--bgcolor2));
+}
+
+.profilepic-section {
+  height: 100%;
+  /* width: 30px; */
+  /* margin: auto; */
+  /* margin-right: 6vw; */
+}
+.profilepic-section > .dropdown {
+  height: auto;
+  width: auto;
+}
+.profilepic-section > .dropdown > .btn {
+  width: 100%;
+  height: auto;
+}
+
+.profilepic {
+  border: 1px solid black;
+  background-image: url(profilepic.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* border-radius: 50%; */
+  height: 40px;
+
+  width: 40px;
+}
+
+/* -----------------------------------Slide-section -------------------*/
+
+.slide-section {
+  padding-top: 20px;
+  height: 50vh;
+  border: 1px solid var(--box1-color);
+}
+.carousel {
+  border: 1px solid var(--box2-color);
+  height: 100%;
+}
+.carousel-inner {
+  border: 2px solid var(--box3-color);
+  height: 100%;
+  width: 100%;
+}
+.carousel-item {
+  border: 2px solid var(--box4-color);
+  height: 100%;
+}
+.artist-portfolio {
+  background-color: transparent;
+
+  color: white;
+  border: 2px solid var(--box5-color);
+
+  height: 100%;
+}
+/* .artist-portfolio > div {
+  border: 2px solid var(--box2-color);
+  height: 100%;
+} */
+
+.artist-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  opacity: 1;
+  height: 100%;
+}
+.artist-description {
+  background-color: black;
+  opacity: 90%;
+  height: 100%;
+}
+.carousel > button {
+  height: 10%;
+  width: 5%;
+  margin-top: 2%;
+}
+
+/* img {
+  max-width: 100%;
+} */
+
+/* ARTIST ID */
+#akul {
+  background-image: url(Artist-images/Akull-Tandon.jpg);
+}
+#gajendra {
+  background-image: url(Artist-images/gajendra-verma.jpg);
+}
+#darshan {
+  background-image: url(Artist-images/Darshan-Raval.jpg);
+}
+#Arrahman {
+  background-image: url(Artist-images/ARRAHMAN.jpg);
+}
+
+.text-portion {
+  border: 2px solid var(--box3-color);
+  /* overflow-y: scroll; */
+  height: 70%;
+}
+.text-portion > h2 {
+}
+.text-portion > p {
+  font-size: 0.5rem;
+  line-height: 1.2rem;
+}
+.button-portion {
+  border: 2px solid var(--box3-color);
+  height: auto;
+  /* min-height: 10px; */
+}
+.button-portion button {
+  background-color: var(--bgcolor1);
+}
+.button-portion button:hover {
+  background-color: var(--bgcolor1-1);
+}
+
+/*------------------------------------- Queue section-------------------- */
+
+.queue-section {
+  height: 70vh;
+  border: 1px solid var(--box1-color);
+}
+
+.queuelist {
+  width: 100%;
+  height: 20px;
+  border-radius: 20px;
+  color: white;
+}
+
+.queuelist > li {
+  opacity: 100;
+  color: rgb(228, 220, 220);
+  background: linear-gradient(#794024, rgb(44, 23, 44));
+  border: none;
+}
+.queue-song-name {
+  line-height: 70%;
+}
+.queue-song-name > span {
+  font-size: 0.7rem;
+}
+
+.thumbnail {
+  height: 3vw;
+  min-height: 20px;
+}
+
+/* audio */
+
+/*------------------------------------ Similar section -----------------*/
+
+.similar-section {
+  color: white;
+  height: 10vh;
+  border: 1px solid var(--box1-color);
+  background-color: transparent;
+  opacity: 0.9;
+}
+
+.similar-section > h5 {
+  margin-top: 5px;
+  background-color: #8e4099;
+  font-family: sans-serif;
+}
+.similarlist {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.similarlist > li {
+  width: 100%;
+  background-color: rgb(245, 184, 137);
+  border: none;
+}
+
+#similar-image {
+  height: 10vw;
+  max-height: 70px;
+}
+/*-------------------------------------------- Recent-section----------------- */
+.recent-section {
+  min-height: 40vh;
+  border: 1px solid var(--box1-color);
+}
+.recentlist {
+  width: 100%;
+  height: 25px;
+  border-radius: 10px;
+  color: whitesmoke;
+}
+/*--------------------------------------- PLAYER_SECTION-------------- */
+.player-section {
+  color: var(--player-color);
+  height: 20vh;
+  max-height: 60px;
+  border: 1px solid var(--box1-color);
+  background: linear-gradient(45deg, var(--bgcolor1), var(--bgcolor2));
+  position: sticky;
+  bottom: 0px;
+}
+
+.player-section > div {
+  height: 100%;
+  border: 1px solid var(--box2-color);
+}
+.player-section > div > div {
+  height: 100%;
+  border: 2px solid var(--box3-color);
+}
+.player-section > div > div {
+  height: 100%;
+  border: 1px solid var(--box4-color);
+}
+.player-description > div {
+  height: 100%;
+  border: 1px solid var(--box4-color);
+}
+.song-image {
+}
+.song-image > img {
+  height: 100%;
+  width: auto;
+}
+.song-name {
+  line-height: 100%;
+}
+.song-name > b {
+  color: #42167a;
+}
+
+.song-name > i {
+  color: #4f1a94;
+  font-size: 0.7rem;
+}
+
+.player-controls > div {
+  border: 1px solid var(--box3-color);
+}
+.play-button {
+  height: 100%;
+}
+.play-button > i {
+  color: #182331;
+}
+.play-button > i:hover {
+  transform: scale(1.1);
+  color: red;
+  box-shadow: 0px 0px 3px 3px black;
+}
+
+.player-volume > div,
+.player-volume > div > .btn {
+  color: #daaa91;
+  border: 1px solid var(--box3-color);
+}
+.quality {
+  line-height: 100%;
+}
+.up-next {
+  line-height: 100%;
+  /* padding: auto; */
+  /* transform: translateY(-10px); */
+}
+/* -------------------------------------HOVER ------------------------------*/
+li {
+  transition: 1s;
+}
+li:hover {
+  border: 2px solid white;
+}
+
+.nav-link:hover,
+i:hover {
+  /* transform: scale(1.2); */
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 1px #fffffe;
+  background-color: #e9986c;
+  /* color: rgb(66, 11, 66); */
+}
+
+/* -----------**********-----*****--- MEDIA QUERIES---*****---------------- */
+
+/*------------------------------ Tablet -------------------*/
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 100%;
+  }
+  .navbar-brand {
+    width: 80%;
+    /* position:relative; */
+  }
+  .navbar-brand > button {
+    /* position:absolute; */
+    /* top:0px;
+  right: 0px; */
+  }
+
+  .slide-section {
+    height: 35vw;
+    min-height: 350px;
+  }
+  .artist-image {
+    height: auto;
+  }
+  .artist-description {
+    height: auto;
+  }
+  .text-portion {
+    padding: 10px;
+    line-height: 120%;
+  }
+
+  .queue-section {
+    height: 42vh;
+  }
+
+  .similar-section {
+    height: 48vh;
+  }
+  .recent-section {
+    min-height: 32vh;
+  }
+}
+/*------------------- Big-smartphone/Small-tablet-------- */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+  .nav-section {
+    height: auto;
+  }
+  .profilepic {
+    width: 6vw;
+    height: 6vw;
+    transform: translateY(2px);
+  }
+  .slide-section {
+    height: 30vw;
+    min-height: 250px;
+  }
+  .artist-image {
+    max-height: 100%;
+  }
+  .artist-description {
+    height: auto;
+  }
+
+  .queue-section {
+    height: 52vw;
+  }
+  .queue-section > audio {
+    width: 95%;
+    max-height: 25px;
+  }
+
+  .similar-section {
+    height: 48vw;
+    padding-right: 0;
+  }
+  .recent-section {
+    min-height: 32vw;
+  }
+  .timer {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+  .timer > span {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+}
+/*------------------ Smart-phone -------*/
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+  .navbar > container-fluid {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .navbar-brand {
+    width: 70%;
+  }
+  .text-portion {
+    padding: 5px;
+    line-height: 110%;
+  }
+
+  /* .nav-section {
+    height: 10vh;
+    max-height: 60px;
+  } */
+  .slide-section {
+    max-height: 180px;
+    height: 50vh;
+    min-height: 50vw;
+  }
+  .profilepic {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .artist-portfolio {
+    height: 100%;
+  }
+
+  .artist-image {
+    max-height: 100%;
+    height: 100%;
+  }
+  .artist-description {
+    height: 100%;
+  }
+  .text-portion {
+    height: auto;
+  }
+  .text-portion > p {
+    height: auto;
+    /* overflow: scroll; */
+  }
+  .button-portion {
+    height: auto;
+  }
+
+  .queue-section {
+    height: 30vh;
+  }
+
+  .similar-section {
+    height: 30vh;
+  }
+  .recent-section {
+    min-height: 30vh;
+  }
+  .player-section > div > .remove {
+    height: 0px;
+    width: 0px;
+    display: none;
+    font-size: 0px;
+  }
+  .play-button > .remove {
+    height: 0px;
+    width: 0px;
+    display: none;
+    font-size: 0px;
+  }
+  .play-button {
+    font-size: 20px;
+    /* transform: translateY(0px); */
+  }
+  .song-buttons > i {
+    font-size: 3vw;
+  }
+  .remove {
+    height: 0px;
+    width: 0px;
+    display: none;
+    font-size: 0px;
+  }
+}
+/*------------ mobile-phone */
+@media screen and (max-width: 250px) {
+  html {
+    font-size: 70%;
+  }
+  .slide-section {
+    max-height: 120vw;
+  }
+  .artist-image {
+    max-height: 70vw;
+  }
+  .artist-description {
+    min-height: 20%;
+    height: auto;
+  }
+
+  .nav-section {
+    height: 10vh;
+    max-height: 60px;
+  }
+  .text-portion {
+    /* overflow-y: scroll; */
+  }
+}

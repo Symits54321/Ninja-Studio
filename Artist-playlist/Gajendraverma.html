@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Static Template</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/931d3a1807.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <!-- BODY -->
+  <body>
+    <!-- <section class="container-fluid d-flex flex-wrap"> -->
+
+    <!------------------------------------------------------- NAV ------------------------------>
+    <section
+      class="nav-section col-12 col-sm-12 sticky-top d-flex align-items-lg-center"
+    >
+      <nav class="navbar navbar-expand-lg p-2 flex-grow-1">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> <b>Ninja Studios</b></a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Trending</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Albums</a
+                >
+              </li>
+              <!-- <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li> -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle fw-medium"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Genres
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Pop</a></li>
+                  <li><a class="dropdown-item" href="#">Cool</a></li>
+                  <li><a class="dropdown-item" href="#">Dance</a></li>
+                  <li><a class="dropdown-item" href="#">90's</a></li>
+                  <li><a class="dropdown-item" href="#">Devotional</a></li>
+                  <li><a class="dropdown-item" href="#">Sad</a></li>
+                  <li><a class="dropdown-item" href="#">Happy</a></li>
+                  <li><a class="dropdown-item" href="#">Funny</a></li>
+                  <!-- <li><hr class="dropdown-divider" /></li>
+                        <li>
+                          <a class="dropdown-item" href="#"></a>
+                        </li> -->
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                      <a class="nav-link disabled">Disabled</a>
+                    </li> -->
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2 rounded-pill"
+                style="background-color: rgb(167, 145, 145);"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-danger round-circle"
+                style="border: none;"
+                type="submit"
+              >
+                <i
+                  class="fa-solid fa-magnifying-glass"
+                  style="color: rgb(255, 255, 255); border: none;"
+                ></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!----------------------------------My PROFILE__PIC --(nav)---------------------------->
+      <div class="profilepic-section p-2">
+        <div class="dropdown">
+          <button
+            class="btn p-0 rounded-5"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <div class="profilepic rounded-5">
+              <!-- <img src="/profilepic.jpeg" alt="Sumit"> -->
+            </div>
+          </button>
+
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Sumit Singh</a></li>
+
+            <li><a class="dropdown-item" href="#">Log out</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-------------------------------------- main container-------------------------------------->
+    <section
+      class="container-fluid container-lg d-flex flex-wrap"
+      style="background: transparent;"
+    >
+      <!-- MAIN Section 1 ------ (---Slides and Queues Section----) ---------------------->
+
+      <section class="main col-12 col-sm-10 d-flex flex-wrap">
+        <!------------------------- SLIDE SECTION -------------------------------------->
+        <section class="slide-section rounded col-12">
+          <!-- CAROUSAL -->
+          <div
+            id="carouselExampleInterval "
+            class="carousel slide rounded"
+            data-bs-ride="carousel"
+          >
+            <!--   CAROUSAL INNER -->
+            <div class="carousel-inner rounded">
+              <!-- ARTIST PORTFOLIO -->
+
+              <!-- ARRAHMAN------>
+              <div class="carousel-item rounded active" data-bs-interval="2000">
+                <!-- portfolio-card      -->
+                <div class="col-12 artist-portfolio rounded d-flex flex-row">
+                  <!-- artist image -->
+                  <div
+                    class="col-6 col-lg-7 artist-image d-flex flex-sm-grow-1 align-self-stretch"
+                    id="gajendra"
+                  ></div>
+
+                  <!--artist description -->
+                  <div
+                    class="col-6 col-lg-5 flex-sm-grow-0 artist-description d-flex flex-column"
+                  >
+                    <!-- text-portion -->
+                    <div
+                      class="text-portion mt-auto flex-sm-grow-1 d-flex justify-content-evenly flex-column"
+                    >
+                      <h2 class="fs-5 text-center p-1 mt-sm-1 mt-md-3 mt-lg-3">
+                        Gajendra Verma
+                      </h2>
+
+                      <p class="fs-6 px-2 px-lg-3 fw-light">
+                        &emsp; Indian composer, singer, lyricist, music director
+                        and sound recordist commonly known for his super hit
+                        song “Teri Ghata”, “Tune Mere Jana”.
+                      </p>
+                    </div>
+                    <!-- BUTTON portion -->
+                    <div
+                      class="button-portion mt-auto p-1 mb-2 mb-sm-1 p-sm-2 d-flex justify-content-around"
+                    >
+                      <button class="btn col-6" type="submit">
+                        Add Playlist
+                      </button>
+                      <button class="btn" type="submit">
+                        <i class="fa-solid fa-download"></i>
+                      </button>
+                      <button class="btn" type="submit">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="carousel-item" data-bs-interval="2000"></div>
+            
+        </div> -->
+
+            <!-- CAROUSAL LEFT RIGHT BUTTON -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+
+        <!--------------------------------------------- QUEUE SECTION ------------------------->
+
+        <section
+          class="queue-section col-12 d-flex flex-column align-items-center py-2 px-0"
+        >
+          <!-- <h2>Queue</h2> -->
+          <span class="col-12 text-center rounded shadow p-2 fw-light">
+            Playlist
+          </span>
+          <ol class="list-group list-group-numbered rounded queuelist p-0">
+            <!-- song-1 -->
+            <li class="list-group-item hstack gap-3 rounded-pill py-0 my-2">
+              <div class="px-0 mx-0">
+                <i class="fa-solid fa-headphones-simple fs-4"></i>
+              </div>
+              <div class="p-2">
+                <img
+                  src="../Songs/Gajendra/song-images/Ja Ja Ja.jpg"
+                  class="thumbnail"
+                />
+              </div>
+              <div
+                class="queue-song-name d-flex flex-column justify-content-evenly"
+              >
+                <h6 class="col p-0 m-0 fw-light">Ja Ja Ja</h6>
+                <span class="col fw-lighter p-0 ms-1">Gajendra Verma</span>
+              </div>
+              <div class="p-2 ms-auto">
+                <i class="fa-brands fa-gratipay fs-5"></i>
+              </div>
+              <div class="p-2"><i class="fa-solid fa-bookmark fs-6"></i></div>
+              <div class="p-2"><i class="fa-solid fa-download fs-6"></i></div>
+            </li>
+            <!-- song-2 -->
+            <li class="list-group-item hstack gap-3 rounded-pill py-0 my-2">
+              <div class="px-0 mx-0">
+                <i class="fa-solid fa-headphones-simple fs-4"></i>
+              </div>
+              <div class="p-2">
+                <img
+                  src="../Songs/Gajendra/song-images/Man Jage.jpg"
+                  class="thumbnail"
+                />
+              </div>
+              <div
+                class="queue-song-name d-flex flex-column justify-content-evenly"
+              >
+                <h6 class="col p-0 m-0 fw-light">Man Jage</h6>
+                <span class="col fw-lighter p-0 ms-1">Gajendra Verma</span>
+              </div>
+              <div class="p-2 ms-auto">
+                <i class="fa-brands fa-gratipay fs-5"></i>
+              </div>
+              <div class="p-2"><i class="fa-solid fa-bookmark fs-6"></i></div>
+              <div class="p-2"><i class="fa-solid fa-download fs-6"></i></div>
+            </li>
+
+            <!-- song-3 -->
+            <li class="list-group-item hstack gap-3 rounded-pill py-0 my-2">
+              <div class="px-0 mx-0">
+                <i class="fa-solid fa-headphones-simple fs-4"></i>
+              </div>
+              <div class="p-2">
+                <img
+                  src="../Songs/Gajendra/song-images/Mila Na Tum.jpg"
+                  class="thumbnail"
+                />
+              </div>
+              <div
+                class="queue-song-name d-flex flex-column justify-content-evenly"
+              >
+                <h6 class="col p-0 m-0 fw-light">Milo Na Tum</h6>
+                <span class="col fw-lighter p-0 ms-1">Gajendra Verma</span>
+              </div>
+              <div class="p-2 ms-auto">
+                <i class="fa-brands fa-gratipay fs-5"></i>
+              </div>
+              <div class="p-2"><i class="fa-solid fa-bookmark fs-6"></i></div>
+              <div class="p-2"><i class="fa-solid fa-download fs-6"></i></div>
+            </li>
+            <!-- song-4 -->
+            <li class="list-group-item hstack gap-3 rounded-pill py-0 my-2">
+              <div class="px-0 mx-0">
+                <i class="fa-solid fa-headphones-simple fs-4"></i>
+              </div>
+              <div class="p-2">
+                <img
+                  src="../Songs/Gajendra/song-images/Tera Ghata.jpg"
+                  class="thumbnail"
+                />
+              </div>
+              <div
+                class="queue-song-name d-flex flex-column justify-content-evenly"
+              >
+                <h6 class="col p-0 m-0 fw-light">Tera Ghata</h6>
+                <span class="col fw-lighter p-0 ms-1">Gajendra Verma</span>
+              </div>
+              <div class="p-2 ms-auto">
+                <i class="fa-brands fa-gratipay fs-5"></i>
+              </div>
+              <div class="p-2"><i class="fa-solid fa-bookmark fs-6"></i></div>
+              <div class="p-2"><i class="fa-solid fa-download fs-6"></i></div>
+            </li>
+            <!-- song-5 -->
+            <li class="list-group-item hstack gap-3 rounded-pill py-0 my-2">
+              <div class="px-0 mx-0">
+                <i class="fa-solid fa-headphones-simple fs-4"></i>
+              </div>
+              <div class="p-2">
+                <img
+                  src="../Songs/Gajendra/song-images/Yad karke.jpg"
+                  class="thumbnail"
+                />
+              </div>
+              <div
+                class="queue-song-name d-flex flex-column justify-content-evenly"
+              >
+                <h6 class="col p-0 m-0 fw-light">Yad Karke</h6>
+                <span class="col fw-lighter p-0 ms-1">Gajendra Verma</span>
+              </div>
+              <div class="p-2 ms-auto">
+                <i class="fa-brands fa-gratipay fs-5"></i>
+              </div>
+              <div class="p-2"><i class="fa-solid fa-bookmark fs-6"></i></div>
+              <div class="p-2"><i class="fa-solid fa-download fs-6"></i></div>
+            </li>
+          </ol>
+
+          <!-- audio -->
+          <!-- <audio controls >
+                          
+                            <source src="Songs/Akul/Bahana.mp3" type="audio/mpeg">
+                            Your browser does not support the audio tag.
+                          </audio> -->
+        </section>
+      </section>
+
+      <!------------Main section 2----------------------------- Similar and Recent sctions----------------------->
+
+      <!------------------------------ SIMILAR Section---------------------->
+    </section>
+    <!---------------------------------- PLAYER SECTION  --------------------------------------->
+    <!-- container-fluid -->
+    <section
+      class="player-section conatiner-fluid bg-light sticky-bottom d-flex justify-content-center"
+    >
+      <!-- container -->
+      <div class="container-fluid container-lg d-flex justify-content-between">
+        <div
+          class="col-3 player-description flex-grow-1 flex-md-grow-0 col-md-3 row"
+        >
+          <div class="col-3 song-image p-1">
+            <img src="../Songs/Akul/song-images/Faraar.jpg" alt="" />
+          </div>
+          <div
+            class="col-5 song-name d-flex flex-column justify-content-center"
+          >
+            <b>Faraar</b>
+            <i class="ms-1">Akull</i>
+          </div>
+          <div
+            class="col-3 song-buttons d-flex justify-content-center align-items-center p-0"
+          >
+            <i class="fa-solid fa-heart btn p-3 p-sm-2"></i>
+            <i class="bi bi-share btn p-3 p-sm-2"></i>
+          </div>
+        </div>
+        <div
+          class="col-3 col-md-5 player-controls row flex-grow-0 flex-sm-grow-1 d-flex"
+        >
+          <div
+            class="col-0 col-md-4 timer d-flex justify-content-center align-items-center"
+          >
+            <span class="border border-primary rounded-pill px-1 py-0"
+              >0.00/0.00</span
+            >
+          </div>
+          <div
+            class="col-12 col-md-8 play-button d-flex justify-content-around align-items-center"
+          >
+            <i class="fa-solid fa-repeat btn remove"></i>
+            <i class="fa-solid fa-backward btn remove"></i>
+            <i
+              class="fa-solid fa-circle-play btn middle"
+              style="font-size: 190%;"
+            ></i>
+            <i class="fa-solid fa-forward btn remove"></i>
+            <i class="fa-solid fa-shuffle btn remove"></i>
+          </div>
+        </div>
+        <div
+          class="col-4 player-volume flex-sm-grow-2 flex-md-grow-0 row remove"
+        >
+          <div
+            class="col-2 ms-auto volume p-0 d-flex align-items-center justify-content-center"
+          >
+            <i class="fa-solid fa-volume-high btn"></i>
+          </div>
+          <div
+            class="col-3 quality d-flex flex-column justify-content-center align-items-center"
+          >
+            <span
+              class="btn p-0"
+              style="font-size: 0.9rem; letter-spacing: 1pt;"
+              >Audio</span
+            >
+            <span
+              class="fw-lighter border px-1 rounded-pill"
+              style="font-size: 0.8rem;"
+              >High</span
+            >
+          </div>
+          <div
+            class="col-5 col-md-6 up-next d-flex flex-column justify-content-center align-items-start"
+          >
+            <b class="fw-light" style="font-size: 0.9rem; font-style: italic;"
+              >Up-next</b
+            >
+            <span class="ms-1" style="font-size: 0.7rem;">Bahana</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <!-******- Finished -******-> -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+
+  <script src="script.js"></script>
+</html>
